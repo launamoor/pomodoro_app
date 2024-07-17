@@ -25,8 +25,9 @@ const SettingsWindow = ({
               <img src={iconClose} alt="Icon Close" />
             </button>
           </div>
+
+          <h4 className={styles.timeTitle}>Time (Minutes)</h4>
           <div className={styles.timeDiv}>
-            <h4 className={styles.timeTitle}>Time (Minutes)</h4>
             {/* pomodoro */}
             <div className={styles.timeRowFlex}>
               <p className={styles.timeRowTitle}>pomodoro</p>
@@ -39,6 +40,7 @@ const SettingsWindow = ({
                 name="pomodoro"
               />
             </div>
+
             {/* short break */}
             <div className={styles.timeRowFlex}>
               <p className={styles.timeRowTitle}>short break</p>
@@ -65,7 +67,9 @@ const SettingsWindow = ({
             </div>
           </div>
           <div className={styles.fontDiv}>
-            <h4 className={styles.timeTitle}>Font</h4>
+            <h4 id="fontTitle" className={styles.fontTitle}>
+              Font
+            </h4>
             <div className={styles.fontDivFlex}>
               <button
                 id="kumbh"
@@ -103,7 +107,7 @@ const SettingsWindow = ({
             </div>
           </div>
           <div className={styles.colorDiv}>
-            <h4 className={styles.timeTitle}>Color</h4>
+            <h4 className={styles.colorTitle}>Color</h4>
             <div className={styles.colorDivFlex}>
               <button
                 onClick={handleColorChange}

@@ -103,7 +103,9 @@
   border-bottom: 1px solid #e3e1e1;
 }
 
-.timeTitle {
+.timeTitle,
+.fontTitle,
+.colorTitle {
   font-size: 1.1rem;
   color: #161932;
   margin-bottom: 1rem;
@@ -312,4 +314,63 @@
 
 .applyButton:hover::after {
   background-color: rgba(255, 255, 255, 0.2);
+}
+
+@media screen and (min-width: 79em) {
+  .outerWrapper {
+    max-width: 40vw;
+    max-height: 60vh;
+  }
+  .innerWrapper {
+    justify-content: center;
+  }
+  .title {
+    font-size: 2.8rem;
+  }
+  .settingsDiv {
+    align-items: center;
+  }
+  .timeTitle {
+    /* margin-bottom: auto; */
+    align-self: start;
+    padding: 0 3rem;
+  }
+  .fontTitle,
+  .colorTitle {
+    margin: 0;
+  }
+  .timeTitle,
+  .fontTitle,
+  .colorTitle {
+    font-size: 1.3rem;
+  }
+  .timeDiv {
+    flex-direction: row;
+    margin-bottom: auto;
+  }
+  .timeRowFlex {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  .settingsDiv {
+    margin-bottom: auto;
+  }
+  .fontDiv {
+    flex-direction: row;
+    align-items: center;
+    /* margin-bottom: 10rem; */
+    padding-bottom: 5rem;
+  }
+  .colorDiv {
+    margin-top: auto;
+    flex-direction: row;
+    margin: auto auto;
+  }
+}
+
+@media screen and (max-width: 79em) and (min-width: 40em) {
+  .outerWrapper {
+    max-width: 65vw;
+  }
 }
