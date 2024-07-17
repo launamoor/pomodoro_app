@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/launamoor/pomodoro_app)
-- Live Site URL: [Add live site URL here](https://bjpomodoro.netlify.app)
+- Solution URL: [Github](https://github.com/launamoor/pomodoro_app)
+- Live Site URL: [Pomodoro APP](https://bjpomodoro.netlify.app)
 
 ## My process
 
@@ -50,5 +50,5 @@ During this project, I learned how to animate components using CSS and react-tra
 
 ## Author
 
-- Website - [Add your name here](https://bartjozef.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/launamoor)
+- Website - [bartjozef.com](https://bartjozef.com)
+- Frontend Mentor - [@launamoor](https://www.frontendmentor.io/profile/launamoor)
