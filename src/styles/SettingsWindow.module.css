@@ -162,6 +162,25 @@
 .fontDivButton {
   cursor: pointer !important;
   z-index: 10;
+  position: relative;
+}
+
+.fontDivButton::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+
+  transition: all 0.2s ease;
+}
+
+.fontDivButton:hover::after {
+  outline: 1px solid #eff1fa;
+  outline-offset: 5px;
 }
 
 .fontDivButton:first-child {
@@ -194,19 +213,68 @@
   width: 4rem;
   background-color: #eff1fa;
 
+  position: relative;
   cursor: pointer;
 }
 
+/* .colorDivButton::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+
+  transition: all 0.2s ease;
+}
+
+.colorDivButton:hover::after {
+  outline: 1px solid #eff1fa;
+  outline-offset: 5px;
+} */
+
 .colorDivButton:first-child {
   background-color: #f87070;
+}
+
+.colorDivButton:first-child::after,
+.colorDivButton:nth-child(2)::after,
+.colorDivButton:last-child::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+
+  transition: all 0.2s ease;
+}
+
+.colorDivButton:first-child:hover::after {
+  outline: 1px solid #f87070;
+  outline-offset: 5px;
 }
 
 .colorDivButton:nth-child(2) {
   background-color: #70f3f8;
 }
 
+.colorDivButton:nth-child(2):hover::after {
+  outline: 1px solid #70f3f8;
+  outline-offset: 5px;
+}
+
 .colorDivButton:last-child {
   background-color: #d881f8;
+}
+
+.colorDivButton:last-child:hover::after {
+  outline: 1px solid #d881f8;
+  outline-offset: 5px;
 }
 
 .applyButton {
@@ -227,4 +295,21 @@
 
   cursor: pointer;
   transition: all 0.3s ease;
+}
+
+.applyButton::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 26.5px;
+
+  transition: all 0.2s ease;
+}
+
+.applyButton:hover::after {
+  background-color: rgba(255, 255, 255, 0.2);
 }

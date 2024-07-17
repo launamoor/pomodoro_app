@@ -47,4 +47,6 @@ input[type="number"]::-webkit-inner-spin-button {
 .button {
   border: none;
   background-color: inherit;
+
+  cursor: pointer;
 }

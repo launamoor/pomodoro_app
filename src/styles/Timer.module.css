@@ -89,3 +89,10 @@
 .outerWrapper:hover .hoverTertiary {
   color: #d881f8;
 }
+
+@media screen and (max-width: 415px) {
+  .outerWrapper {
+    min-width: 300px;
+    min-height: 300px;
+  }
+}

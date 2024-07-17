@@ -15,3 +15,9 @@
   opacity: 0;
   transition: opacity 500ms ease;
 }
+
+@media screen and (max-width: 415px) {
+  html {
+    font-size: 50%;
+  }
+}
