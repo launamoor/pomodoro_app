@@ -1,0 +1,91 @@
+.outerWrapper {
+  min-height: 45vh;
+  min-width: 45vh;
+  padding: 1.5rem;
+  border-radius: 50%;
+  position: relative;
+
+  background: rgb(46, 50, 90);
+  background: linear-gradient(
+    135deg,
+    rgba(14, 17, 42, 1) 0%,
+    rgba(46, 50, 90, 1) 100%
+  );
+
+  box-shadow: -50px -50px 100px #272c5a;
+
+  border: none;
+  font-family: inherit;
+  color: inherit;
+  font-weight: inherit;
+  cursor: pointer;
+}
+
+.outerWrapper::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-shadow: 50px 50px 100px #121530;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
+
+.innerWrapper {
+  height: 100%;
+  border-radius: 50%;
+  padding: 1rem;
+  background-color: #161932;
+
+  position: relative;
+}
+
+.timerWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  padding: 1rem;
+  background-color: #161932;
+  border-radius: 50%;
+
+  position: relative;
+  gap: 1rem;
+}
+
+.progressBar {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.timer {
+  font-size: 6.5rem;
+}
+
+.action {
+  margin-left: 15px;
+  transition: all 0.2s ease;
+}
+
+.outerWrapper .hoverPrimary,
+.outerWrapper .hoverSecondary,
+.outerWrapper .hoverTertiary {
+  color: #fff;
+}
+
+.outerWrapper:hover .hoverPrimary {
+  color: #f87070;
+}
+
+.outerWrapper:hover .hoverSecondary {
+  color: #70f3f8;
+}
+
+.outerWrapper:hover .hoverTertiary {
+  color: #d881f8;
+}

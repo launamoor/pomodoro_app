@@ -1,0 +1,230 @@
+.overlay {
+  height: 100%;
+  width: 100%;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: rgba(10, 12, 28, 0.5);
+}
+
+.outerWrapper {
+  height: 80%;
+  width: 85%;
+}
+
+.innerWrapper {
+  background-color: #fff;
+  border-radius: 15px;
+
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+
+  position: relative;
+}
+
+.settingsDiv {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+
+  padding: 2rem 3rem;
+  position: relative;
+}
+
+.settingsDiv::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-bottom: 1px solid #e3e1e1;
+}
+
+.title {
+  font-size: 2rem;
+  color: #161932;
+}
+
+.closeButton {
+  display: inline-block;
+  border: none;
+  background-color: inherit;
+  z-index: 10;
+
+  cursor: pointer;
+}
+
+.closeButton img {
+  transition: all 0.2s;
+}
+
+.closeButton:hover img {
+  filter: brightness(3);
+}
+
+.closeButton:active img {
+  transform: scale(0.9);
+}
+
+.timeDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 1rem;
+  padding: 2rem 3rem;
+  position: relative;
+}
+
+.timeDiv::after {
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  border-bottom: 1px solid #e3e1e1;
+}
+
+.timeTitle {
+  font-size: 1.1rem;
+  color: #161932;
+  margin-bottom: 1rem;
+}
+
+.timeRowFlex {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.timeRowTitle {
+  font-size: 1.2rem;
+  color: rgba(30, 33, 63, 0.4);
+}
+
+.fontDiv,
+.colorDiv {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 2rem 3rem;
+}
+
+.fontDiv {
+  position: relative;
+}
+
+.fontDiv::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-bottom: 1px solid #e3e1e1;
+}
+
+.colorDiv {
+  margin-bottom: 4rem;
+  padding-top: 2rem;
+}
+
+.fontDivFlex,
+.colorDivFlex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.fontDivButton {
+  cursor: pointer !important;
+  z-index: 10;
+}
+
+.fontDivButton:first-child {
+  font-family: "Kumbh Sans";
+  font-weight: bold;
+}
+
+.fontDivButton:nth-child(2) {
+  font-family: "Roboto Slab";
+  font-weight: bold;
+}
+
+.fontDivButton:last-child {
+  font-family: "Space Mono";
+  font-weight: bold;
+}
+
+.buttonActive {
+  background-color: #161932 !important;
+  color: #fff !important;
+}
+
+.fontDivButton,
+.colorDivButton {
+  display: inline-block;
+  border: none;
+  font-size: 1.5rem;
+  border-radius: 50%;
+  height: 4rem;
+  width: 4rem;
+  background-color: #eff1fa;
+
+  cursor: pointer;
+}
+
+.colorDivButton:first-child {
+  background-color: #f87070;
+}
+
+.colorDivButton:nth-child(2) {
+  background-color: #70f3f8;
+}
+
+.colorDivButton:last-child {
+  background-color: #d881f8;
+}
+
+.applyButton {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+
+  display: inline-block;
+  border: none;
+  background-color: inherit;
+  color: #fff;
+  font-family: inherit;
+  font-size: 1.6rem;
+  font-weight: bold;
+  padding: 1rem 4rem;
+  border-radius: 26.5px;
+
+  cursor: pointer;
+  transition: all 0.3s ease;
+}

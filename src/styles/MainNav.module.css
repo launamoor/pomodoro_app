@@ -1,0 +1,60 @@
+.navContainer {
+  background-color: #161932;
+  padding: 1rem;
+  border-radius: 31.5px;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.itemButton {
+  display: inline-block;
+  border: none;
+  background-color: inherit;
+  padding: 1.4rem 1.8rem;
+  font-family: inherit;
+  font-size: 1.2rem;
+  font-weight: bold;
+  line-height: 1.2;
+  color: #d7e0ff;
+  border-radius: 26.5px;
+  transition: all 0.2s;
+
+  position: relative;
+  cursor: pointer;
+}
+
+.itemButton::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 26.5px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.3s ease;
+}
+
+.itemButton:hover::after {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.active {
+  color: #1e213f;
+}
+
+.kumbh {
+  font-family: "Kumbh Sans" !important;
+}
+.roboto {
+  font-family: "Roboto Slab" !important;
+}
+.space {
+  font-family: "Space Mono" !important;
+}

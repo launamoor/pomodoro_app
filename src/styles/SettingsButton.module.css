@@ -1,0 +1,21 @@
+.settingsButton {
+  display: inline-block;
+  border: none;
+  background-color: inherit;
+
+  cursor: pointer;
+  position: relative;
+  background-color: inherit;
+}
+
+.settingsIcon {
+  transition: all 0.2s;
+}
+
+.settingsButton:hover .settingsIcon {
+  filter: brightness(2);
+}
+
+.settingsButton:active .settingsIcon {
+  transform: scale(0.95);
+}
